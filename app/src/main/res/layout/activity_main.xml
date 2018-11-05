@@ -14,7 +14,7 @@
         android:layout_height="?attr/actionBarSize"
         app:theme="@style/ActionBarThemeOverlay"
         android:background="#534b4b"
-        app:title="Tranport"
+        app:title="Transport"
         app:titleTextColor="#FEFDFD"
         app:popupTheme="@style/ActionBarPopupThemeOverlay"
         android:elevation="4dp"/>

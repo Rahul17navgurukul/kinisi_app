@@ -88,6 +88,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:text="Price card"
+                android:id="@+id/price_info"
                 android:textAllCaps="true"
                 android:textColor="#398CD3"
                 android:textSize="14sp"
@@ -106,9 +107,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/des"
                 android:visibility="invisible"
-                app:backGroundColor="@color/white"
-                app:textColor="@color/colorPrimary"
-                app:backgroundDrawable="@drawable/elegant_btn"
+                app:backGroundColor="#514A4A"
+                app:textColor="#FEFDFD"
+
                 >
 
             </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>

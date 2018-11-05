@@ -150,6 +150,15 @@ public class SecondActivity extends AppCompatActivity {
                 }
             });
 
+            holder.price_info.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent price_info = new Intent(SecondActivity.this,Price_info.class);
+                    startActivity(price_info);
+
+                }
+            });
+
 
 
 
@@ -169,6 +178,7 @@ public class SecondActivity extends AppCompatActivity {
             TextView name , desc, price;
             Button btn;
             ElegantNumberButton elegantNumberButton;
+            TextView price_info;
 
 
             public recyler(@NonNull View itemView) {
@@ -180,6 +190,7 @@ public class SecondActivity extends AppCompatActivity {
                 price = itemView.findViewById(R.id.price);
                 btn = itemView.findViewById(R.id.btnadd);
                 elegantNumberButton = itemView.findViewById(R.id.elegant_num);
+                price_info = itemView.findViewById(R.id.price_info);
 
             }
         }
