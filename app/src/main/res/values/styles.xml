@@ -10,8 +10,5 @@
 
     </style>
 
-    <style name="ActionBarThemeOverlay">abc</style>
-
-    <style name="ActionBarPopupThemeOverlay">bcd</style>
 
 </resources>

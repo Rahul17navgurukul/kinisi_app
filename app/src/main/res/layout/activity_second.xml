@@ -10,10 +10,10 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#534b4b"
+        android:background="@color/colorPrimary"
         android:elevation="4dp"
-        app:popupTheme="@style/ActionBarPopupThemeOverlay"
-        app:theme="@style/ActionBarThemeOverlay"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
         app:title="Book E-Cycle"
         app:titleTextColor="#FEFDFD" />
 
