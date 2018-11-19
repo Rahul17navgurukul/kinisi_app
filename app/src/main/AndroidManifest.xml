@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity" />
-        <activity android:name=".Result" />
-        <activity android:name=".Price_info"></activity>
+        <activity android:name=".Payment_Summary" />
+        <activity android:name=".Price_info" />
+        <activity android:name=".Share_Detail" />
+        <activity android:name=".Booking_Confirmed"></activity>
     </application>
 
 </manifest>

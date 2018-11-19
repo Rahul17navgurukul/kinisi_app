@@ -141,7 +141,7 @@ public class SecondActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
 
-                    Intent test = new Intent(SecondActivity.this,Result.class);
+                    Intent test = new Intent(SecondActivity.this,Payment_Summary.class);
                     test.putExtra("data1",cyclename);
                     test.putExtra("data2",cycleprice);
                     test.putExtra("data3",cycledescri);

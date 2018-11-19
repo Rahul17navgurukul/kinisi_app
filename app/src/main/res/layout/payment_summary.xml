@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_Summary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary"
+        app:title="Payment Summary"
+        app:titleTextColor="#FEFDFD"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:elevation="4dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/card1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Hi..."
+            android:textStyle="bold"
+            android:id="@+id/hi"
+            android:textSize="20sp"
+            android:layout_marginLeft="11dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:layout_below="@id/hi"
+                android:id="@+id/tvname"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp" />
+
+            <TextView
+                android:id="@+id/count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tvname"
+                android:layout_marginLeft="5dp"
+                android:text="Quantity"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/tvname" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvname"
+                android:text="price"
+                android:id="@+id/tvprice"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tvprice"
+                android:text="des"
+                android:id="@+id/tvdes"
+                android:textSize="20sp"
+                android:layout_marginLeft="11dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
+        android:id="@+id/card2"
+        android:layout_marginTop="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Total"
+                android:id="@+id/tvtotal"
+                android:textSize="20sp"
+                android:layout_marginLeft="11dp" />
+
+
+            <TextView
+                android:id="@+id/tv_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tvtotal"
+                android:text="Rs 4000"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Tax(CGST: 9%)"
+                android:layout_below="@id/tvtotal"
+                android:id="@+id/tvtax"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp" />
+
+            <TextView
+                android:id="@+id/tvtax_amout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/tvtax"
+                android:layout_marginEnd="11dp"
+                android:text="Rs 45"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvtax"
+                android:text="Tax(SGST: 9%)"
+                android:id="@+id/tvtax2"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp" />
+
+            <TextView
+                android:id="@+id/tv_tax2_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tvtax2"
+                android:text="Rs 45"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tvtax2"
+                android:text="To pay"
+                android:textStyle="bold"
+                android:id="@+id/tv_to_pay"
+                android:textSize="20sp"
+                android:layout_marginLeft="11dp" />
+
+            <TextView
+                android:id="@+id/tv_to_pay_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_to_pay"
+                android:text="Rs 4090"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <Button
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttons2_style"
+        android:textColor="@color/white"
+        android:text="Book Cycle"
+        android:id="@+id/book_cycle"
+        android:layout_below="@+id/card2"
+        android:layout_marginTop="64dp"
+        android:padding="10dp"/>
+
+    </RelativeLayout>
+
+
+
